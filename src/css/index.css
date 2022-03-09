@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(40px + 6vmin);
+    color: #0084ff;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(12px + 2vmin);
+    color: #0084ff;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0084ff;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.App {
+    text-align: center;
+    background-color: #000000;
+    padding-top: 5px;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 5s linear;
+    }
+}
+
+.App-header {
+    background-color: #000000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.links {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+a:link {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0084ff;
+    text-decoration: none;
+}
+
+.portfolio.preview {
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-bottom: 1px solid #ff0000;
+}
+
+.portfolio.preview:hover {
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio {
+    min-height: 100vh;
+}
+
+.about {
+    min-height: 100vh;
+    color: #efefef;
+}
+
+.contact {
+    min-height: 100vh;
+}
+
+.slide-container {
+    min-height: 100vh; 
+}
+
+.each-slide>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    height: 75vh;
+    width: 75vh;
+
+}
+
+.each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+}
