@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import '../css/index.css';
+import { useState } from "react";
 
 
 
@@ -11,6 +12,7 @@ const Contact = () => {
       <h2>Contact</h2>
       <p>wanwan@contact.com</p>
       <MyForm />
+      <MyFormTwo />
     </div>
     )
   };
@@ -19,7 +21,7 @@ const Contact = () => {
     constructor(props) {
       super(props);
       this.state = {
-        value: 'Please write an essay about your favorite DOM element.'
+        value: 'Formuläret uppdateras snarast'
       };
   
       this.handleChange = this.handleChange.bind(this);
@@ -31,15 +33,16 @@ const Contact = () => {
     }
   
     handleSubmit(event) {
-      alert('An essay was submitted: ' + this.state.value);
+      alert('Submitted: ' + this.state.value);
       event.preventDefault();
     }
   
     render() {
       return (
+        
         <form onSubmit={this.handleSubmit}>
           <label>
-            Essay:
+            <p>jhbgkjhgkgv</p>
             <textarea value={this.state.value} onChange={this.handleChange} />
           </label>
           <input type="submit" value="Submit" />
@@ -47,4 +50,22 @@ const Contact = () => {
       );
     }
   }
+
+  function MyFormTwo() {
+    const [name, setName] = useState("");
+  
+    return (
+      <form>
+        <label><p>Enter your name:</p>
+          <input
+            type="text" 
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </label>
+      </form>
+    )
+  }
+
+
   export default Contact;
