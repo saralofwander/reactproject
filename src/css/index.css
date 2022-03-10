@@ -41,7 +41,15 @@ p {
     padding-top: 5px;
     font-size: 14px;
     font-weight: bold;
-    
+}
+
+.me-auto {
+    text-align: center;
+   
+}
+
+#basic-navbar-nav {
+    color: #ff0000;
 }
 
 .App-logo {

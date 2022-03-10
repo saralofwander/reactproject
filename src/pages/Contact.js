@@ -10,7 +10,8 @@ const Contact = () => {
   return (
     <div className="contact">
       <h2>Contact</h2>
-      <p>wanwan@contact.com</p>
+      <p>svamp@contact.com</p>
+      <br></br><br></br>
       <MyForm />
       <MyFormTwo />
     </div>
@@ -42,10 +43,12 @@ const Contact = () => {
         
         <form onSubmit={this.handleSubmit}>
           <label>
-            <p>jhbgkjhgkgv</p>
+            <p>Fyll i din fråga här:</p>
             <textarea value={this.state.value} onChange={this.handleChange} />
           </label>
+          <br></br>
           <input type="submit" value="Submit" />
+          <br></br>
         </form>
       );
     }
@@ -56,6 +59,7 @@ const Contact = () => {
   
     return (
       <form>
+        <br></br>
         <label><p>Enter your name:</p>
           <input
             type="text" 
