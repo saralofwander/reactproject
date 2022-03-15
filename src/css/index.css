@@ -39,17 +39,18 @@ p {
     text-align: center;
     background-color: #000000;
     padding-top: 5px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
 }
 
 .me-auto {
     text-align: center;
-   
+   background-color: #000000;
 }
 
 #basic-navbar-nav {
     color: #ff0000;
+    background-color: #000000;
 }
 
 .App-logo {
@@ -158,3 +159,12 @@ a:hover {
     text-align: center;
 }
 
+.navbar{
+    font-size:12px !important;
+    }
+
+.form-group.form-control {
+    width: 60px;
+
+    align-items: center;
+}

@@ -18,7 +18,7 @@ function App() {
 
     <div className="App">
       <BrowserRouter>
-     <Navbar bg="dark" variant ="dark" expand="lg">
+     <Navbar class="navbar" bg="dark" variant ="dark" expand="lg">
  <Container>
     
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
